@@ -191,6 +191,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"la Clé est plus longue que le texte",Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if(code.getText().toString().equals("")){
+            Toast.makeText(MainActivity.this,"Le champ texte est vide",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(cle.getText().toString().equals("")){
+            Toast.makeText(MainActivity.this,"Le champ clé est vide",Toast.LENGTH_SHORT).show();
+            return;
+        }
         String resultat="";
 
         int j = 0;
@@ -216,6 +225,14 @@ public class MainActivity extends AppCompatActivity {
         String resultat="";
         if(code.length() < cle.length()){
             Toast.makeText(MainActivity.this,"la Clé est plus longue que le texte",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(code.getText().toString().equals("")){
+            Toast.makeText(MainActivity.this,"Le champ texte est vide",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(cle.getText().toString().equals("")){
+            Toast.makeText(MainActivity.this,"Le champ clé est vide",Toast.LENGTH_SHORT).show();
             return;
         }
 
