@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -186,6 +187,10 @@ public class MainActivity extends AppCompatActivity {
     public void decriptez(View view){
         EditText code = (EditText)findViewById(R.id.editText);
         EditText cle = (EditText)findViewById(R.id.editText2);
+        if(code.length() < cle.length()){
+            Toast.makeText(MainActivity.this,"la Clé est plus longue que le texte",Toast.LENGTH_SHORT).show();
+            return;
+        }
         String resultat="";
 
         int j = 0;
@@ -209,6 +214,10 @@ public class MainActivity extends AppCompatActivity {
         EditText code = (EditText)findViewById(R.id.editText);
         EditText cle = (EditText)findViewById(R.id.editText2);
         String resultat="";
+        if(code.length() < cle.length()){
+            Toast.makeText(MainActivity.this,"la Clé est plus longue que le texte",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         int j = 0;
         for (int i = 0; i < code.getText().toString().length(); i++) {
