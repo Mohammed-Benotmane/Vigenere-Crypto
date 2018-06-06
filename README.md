@@ -12,3 +12,7 @@ this is an app witch crypt and decrypt messages with Vigenere's method
 ![33850137_10216637471393659_6182805280305184768_n](https://user-images.githubusercontent.com/39698080/40632573-c957ddee-62e8-11e8-9b41-9910a32cef5d.png)
 
 ![33923640_10216637471633665_6767164864013008896_n](https://user-images.githubusercontent.com/39698080/40632574-c98261ea-62e8-11e8-80b3-3d2f1fcdfb5b.png)
+
+### Contraint
+
+![vigenere](https://user-images.githubusercontent.com/39698080/41008970-723ad056-692e-11e8-87ec-b12d45fc29b3.png)
